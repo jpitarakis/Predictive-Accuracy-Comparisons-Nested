@@ -10,7 +10,7 @@ function [ehat]=recursive_hstep_fast(y,X,pi0,h)
 % h: forecast horizon
 % 
 % 
-% Recursively LS-fitted Model (with intercept): y(t) = X(t-h) beta + u(t), t=h+1,...,n
+% Recursively LS-fitted Model (with intercept): y(t) = beta0 + X(t-h) beta1 + u(t), t=h+1,...,n
 %
 % Notes: (1) first estimation window is [1,...,k0] and last window is 
 % [1,....,n-h] for k0 = round(n*pi0). First forecast is yhat(k0+h|k0)
@@ -21,7 +21,7 @@ function [ehat]=recursive_hstep_fast(y,X,pi0,h)
 %
 % Outputs: 
 %
-% sequence of h-steps ahead forecast errors (n-h-k0+1 x 1)
+% sequence of h-steps ahead forecast errors as (n-h-k0+1 x 1) vector
 %
 %  
 
