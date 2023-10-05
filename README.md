@@ -7,4 +7,4 @@ The folder "Full Packet of Files" aggregates all files used in the project.
 
 These programs implement the tests developed in the above paper. 
 
-{\sf recursive\_hstep\_fast(y,X,pi0,h)}
+
